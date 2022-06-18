@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-os-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -47,6 +53,43 @@
         display: none;
     }
 
+    .jl-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2CCB69;
+        background-image: url('../images/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        /* This index don't need to be 200, could be 2 or 20, Put this as 200 
+        is better if i need to put a index lower then this I won't need to change this*/
+        transition: all 0.2s ease-out;
+    }
+
+    .jl-btn-contact:hover {
+        background-position-y: -45px;
+    }
+
+    .jl-contact-info {
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+
+    }
+
+    .jl-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+    }
 
 }
 
@@ -85,6 +128,7 @@
     }
 
     .jl-menu a:before {
+        /* This is the first parameters of the animation (Underline green) */
         content: '';
         width: 0;
         height: 4px;
@@ -107,3 +151,42 @@
 @media screen and (min-width: 1364px) {}
 
 @media screen and (min-width: 1600px) {}
+
+
+/*CLASSES UTILITARIAS*/
+.jl-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4D4C4C;
+}
+
+.jl-text-light {
+    color: #BCBCBC;
+}
+
+.jl-text-black {
+    color: #000
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light {
+    background-color: #BCBCBC;
+}
+
+.jl-bg-black {
+    background-color: #000
+}
