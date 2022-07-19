@@ -23,7 +23,7 @@ p {
     .jl-preloader {
         width: 100%;
         height: 100vh;
-        display: block;
+        display: table;
         background-color: #1C1C1C;
         border: 30px solid #000;
     }
@@ -157,6 +157,21 @@ p {
 
     }
 
+
+    /*-----HOME-----*/
+
+    .jl-display-text {
+        margin-top: 10%;
+    }
+
+    #jl-home-presentation {
+        background-image: url('../images/joao-lemon-designer-home.png');
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+
+
+    }
+
 }
 
 @media screen and (min-width: 576px) {}
@@ -224,6 +239,10 @@ p {
 .jl-title {
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
+}
+
+.jl-title-big {
+    font-size: 120px;
 }
 
 .jl-text-green {
@@ -296,6 +315,15 @@ p {
 
 .jl-pad-left-15 {
     padding-left: 15px;
+}
+
+.jl-full-height {
+    height: 100vh;
+
+}
+
+.jl-first-section {
+    height: calc(100vh -30px);
 }
 
 

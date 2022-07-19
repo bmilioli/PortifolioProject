@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 
     setTimeout(function () {
         pagePreloader.style.display = 'none';
-    }, 2000);
+    }, 3000);
 });
 
 //Abrindo e fechando informações de Contato
